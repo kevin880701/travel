@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">travel</string>
+    <string name="attraction">Attractions</string>
+    <string name="event">Event</string>
+    <string name="media">Media</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="tours">Tours</string>
+    <string name="search">Search</string>
+    <string name="select_language">Select Language</string>
+    <string name="news">News</string>
+    <string name="activities">activity</string>
+    <string name="calendar">Calendar</string>
+    <string name="panos">720 Panorama</string>
+    <string name="audio">Audio Guide</string>
+    <string-array name="category_array">
+        <item>Beibeiji Attractions</item>
+        <item>Health Spa</item>
+        <item>Outdoor Outing</item>
+        <item>Parent-Child Travel</item>
+        <item>Barrier-free tourism recommended attractions</item>
+        <item>Historic Buildings</item>
+        <item>Art Museum</item>
+        <item>Public Art</item>
+    </string-array>
+    <string-array name="category_id_array">
+        <item>20</item>
+        <item>11</item>
+        <item>16</item>
+        <item>19</item>
+        <item>25</item>
+        <item>13</item>
+        <item>15</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>zh-tw</item>
+        <item>zh-cn</item>
+        <item>en</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>es</item>
+        <item>id</item>
+        <item>th</item>
+        <item>vi</item>
+    </string-array>
+    <string-array name="language_id_array">
+        <item>zh-tw</item>
+        <item>zh-cn</item>
+        <item>en</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>es</item>
+        <item>id</item>
+        <item>th</item>
+        <item>vi</item>
+    </string-array>
+
+    <string-array name="events_tab">
+        <item>News</item>
+        <item>Activity</item>
+        <item>Calendar</item>
+    </string-array>
+
+    <string-array name="media_tab">
+        <item>720 Panorama</item>
+        <item>Audio Guide</item>
+    </string-array>
+</resources>

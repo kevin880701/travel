@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.lhr.travel.ui.attractionsDetail.AttractionsDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/under_line"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintHeight_percent="0.08"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="35dp"
+                android:layout_height="0dp"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textTitleBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="@{viewModel.title}"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/imageBack"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollViewAttractions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintTitleBar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintAttractionsData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageAttractions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/image_not"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="@{viewModel.title}"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/imageAttractions" />
+
+                <TextView
+                    android:id="@+id/textIntroduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@{viewModel.introduction}"
+                    app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+                <TextView
+                    android:id="@+id/textAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@{viewModel.address}"
+                    app:layout_constraintTop_toBottomOf="@+id/textIntroduction" />
+
+                <TextView
+                    android:id="@+id/textModified"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@{viewModel.modified}"
+                    app:layout_constraintTop_toBottomOf="@+id/textAddress" />
+
+                <TextView
+                    android:id="@+id/textUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@{viewModel.url}"
+                    app:layout_constraintTop_toBottomOf="@+id/textModified" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

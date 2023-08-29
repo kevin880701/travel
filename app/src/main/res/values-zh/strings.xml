@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">travel</string>
+    <string name="attraction">遊憩景點</string>
+    <string name="event">活動資訊</string>
+    <string name="media">影音刊物</string>
+    <string name="miscellaneous">其他</string>
+    <string name="tours">玩樂台北</string>
+    <string name="search">查詢</string>
+    <string name="select_language">選擇語言</string>
+    <string name="news">最新消息</string>
+    <string name="activities">活動展延</string>
+    <string name="calendar">活動年曆</string>
+    <string name="panos">720環景</string>
+    <string name="audio">語音導覽</string>
+    <string-array name="category_array">
+        <item>北北基景點</item>
+        <item>養生溫泉</item>
+        <item>戶外踏青</item>
+        <item>親子共遊</item>
+        <item>無障礙旅遊推薦景點</item>
+        <item>歷史建築</item>
+        <item>藝文館所</item>
+        <item>公共藝術</item>
+    </string-array>
+    <string-array name="category_id_array">
+        <item>20</item>
+        <item>11</item>
+        <item>16</item>
+        <item>19</item>
+        <item>25</item>
+        <item>13</item>
+        <item>15</item>
+        <item>18</item>
+    </string-array>
+
+    <string-array name="language_array">
+        <item>繁體中文</item>
+        <item>簡體中文</item>
+        <item>英文</item>
+        <item>日文</item>
+        <item>韓文</item>
+        <item>西班牙文</item>
+        <item>印尼文</item>
+        <item>泰文</item>
+        <item>越南文</item>
+    </string-array>
+    <string-array name="language_id_array">
+        <item>zh-tw</item>
+        <item>zh-cn</item>
+        <item>en</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>es</item>
+        <item>id</item>
+        <item>th</item>
+        <item>vi</item>
+    </string-array>
+
+    <string-array name="events_tab">
+        <item>最新消息</item>
+        <item>活動展演</item>
+        <item>活動年曆</item>
+    </string-array>
+
+    <string-array name="media_tab">
+        <item>720環景</item>
+        <item>語音導覽</item>
+    </string-array>
+</resources>
