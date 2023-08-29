@@ -132,7 +132,7 @@ lateinit var attractionsAdapter: AttractionsAdapter
                 configuration.setLocale(locale)
                 val localizedContext = this.requireActivity().createConfigurationContext(configuration)
                 viewModel.title.postValue(localizedContext.resources.getString(R.string.attraction))
-            }
+            } 
             "zh-cn" -> {
                 val locale = Locale.CHINA
 //                    val locale = Locale("zh","rCN")
